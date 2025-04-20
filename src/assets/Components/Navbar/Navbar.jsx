@@ -13,7 +13,7 @@ const links = <>
 </>
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto md:px-10'>
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -26,7 +26,7 @@ const links = <>
                            {links}
                         </ul>
                     </div>
-                    <a className="flex items-center gap-3 text-3xl "><span><img className='w-9' src={image} alt="" /></span><span className='font-bold'>DocBD</span></a>
+                    <a className="flex items-center gap-1 md:gap-3 text-2xl md:text-3xl "><span><img className='w-9' src={image} alt="" /></span><span className='font-bold'>DocBD</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-10 menu-horizontal px-1">

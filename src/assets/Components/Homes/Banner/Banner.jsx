@@ -13,9 +13,9 @@ const Banner = () => {
                 <input type="text" className="input md:w-[420px] rounded-3xl mt-4" placeholder="Search any doctor..." />
                 <button className="btn rounded-3xl md:ml-3 mt-4 bg-[#176AE5] text-white">Search Now</button>
             </div>
-            <div className='md:flex md:justify-center md:gap-10 mt-4'>
-                <img className='w-[500px]' src={bannerImage} alt="" />
-                <img className='w-[500px] rounded-3xl' src={bannerImage2} alt="" />
+            <div className='md:flex md:justify-center md:gap-10 '>
+                <img className='md:w-[500px] mt-4' src={bannerImage} alt="" />
+                <img className='md:w-[500px] rounded-xl mt-4' src={bannerImage2} alt="" />
             </div>
         </div>
     );

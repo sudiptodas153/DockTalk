@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "image": "doctor1.jpg",
+        "name": "Dr. Ayesha Rahman",
+        "education": "MBBS, FCPS (Medicine)",
+        "speciality": "Internal Medicine",
+        "experience": "12+ years",
+        "registration_number": "BMDC123456"
+    },
+    {
+        "id": 2,
+        "image": "doctor2.jpg",
+        "name": "Dr. Farhan Ahmed",
+        "education": "MBBS, MS (Orthopedics)",
+        "speciality": "Orthopedic Surgeon",
+        "experience": "10+ years",
+        "registration_number": "BMDC234567"
+    },
+    {
+        "id": 3,
+        "image": "doctor3.jpg",
+        "name": "Dr. Nusrat Jahan",
+        "education": "MBBS, DGO",
+        "speciality": "Gynecology",
+        "experience": "8+ years",
+        "registration_number": "BMDC345678"
+    },
+    {
+        "id": 4,
+        "image": "doctor4.jpg",
+        "name": "Dr. Tanvir Hossain",
+        "education": "MBBS, FCPS (Cardiology)",
+        "speciality": "Cardiologist",
+        "experience": "15+ years",
+        "registration_number": "BMDC456789"
+    },
+    {
+        "id": 5,
+        "image": "doctor5.jpg",
+        "name": "Dr. Sharmin Akter",
+        "education": "MBBS, MD (Dermatology)",
+        "speciality": "Dermatologist",
+        "experience": "9+ years",
+        "registration_number": "BMDC567890"
+    },
+    {
+        "id": 6,
+        "image": "doctor6.jpg",
+        "name": "Dr. Imran Kabir",
+        "education": "MBBS, MS (ENT)",
+        "speciality": "ENT Specialist",
+        "experience": "11+ years",
+        "registration_number": "BMDC678901"
+    },
+    {
+        "id": 7,
+        "image": "doctor7.jpg",
+        "name": "Dr. Rubaiya Sultana",
+        "education": "MBBS, FCPS (Pediatrics)",
+        "speciality": "Child Specialist",
+        "experience": "7+ years",
+        "registration_number": "BMDC789012"
+    },
+    {
+        "id": 8,
+        "image": "doctor8.jpg",
+        "name": "Dr. Mahmudul Hasan",
+        "education": "MBBS, MD (Neurology)",
+        "speciality": "Neurologist",
+        "experience": "13+ years",
+        "registration_number": "BMDC890123"
+    },
+    {
+        "id": 9,
+        "image": "doctor9.jpg",
+        "name": "Dr. Tanjina Ferdous",
+        "education": "MBBS, MS (Ophthalmology)",
+        "speciality": "Eye Specialist",
+        "experience": "6+ years",
+        "registration_number": "BMDC901234"
+    },
+    {
+        "id": 10,
+        "image": "doctor10.jpg",
+        "name": "Dr. Arifuzzaman Khan",
+        "education": "MBBS, MD (Psychiatry)",
+        "speciality": "Psychiatrist",
+        "experience": "10+ years",
+        "registration_number": "BMDC012345"
+    },
+    {
+        "id": 11,
+        "image": "doctor11.jpg",
+        "name": "Dr. Laila Noor",
+        "education": "MBBS, FCPS (Radiology)",
+        "speciality": "Radiologist",
+        "experience": "8+ years",
+        "registration_number": "BMDC112233"
+    },
+    {
+        "id": 12,
+        "image": "doctor12.jpg",
+        "name": "Dr. Salman Rafiq",
+        "education": "MBBS, MS (Surgery)",
+        "speciality": "General Surgeon",
+        "experience": "14+ years",
+        "registration_number": "BMDC223344"
+    }
+]
