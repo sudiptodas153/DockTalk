@@ -7,7 +7,7 @@ const Banner = () => {
         <div className='bg-gradient-to-t from-white  to-[#EFEFEF] border-2 border-white px-2 py-6 md:p-10 rounded-2xl'>
             <div className='text-center space-y-4'>
                 <h2 className='text-2xl md:text-4xl font-bold'>Dependable Care, Backed by Trusted Professionals.</h2>
-                <p className='text-sm'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
+                <p className='text-sm'>We believe that quality healthcare starts with trust. Our team of experienced medical professionals is dedicated to delivering dependable care rooted in compassion, expertise, and integrity. Every doctor in our network is carefully selected for their commitment to clinical excellence and patient well-being.</p>
             </div>
             <div className='text-center '>
                 <input type="text" className="input md:w-[420px] rounded-3xl mt-4" placeholder="Search any doctor..." />

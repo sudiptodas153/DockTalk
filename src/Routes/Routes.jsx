@@ -6,6 +6,7 @@ import MyBooking from "../assets/Components/Homes/MyBooking/MyBooking";
 import Blogs from "../assets/Components/Homes/Blogs/Blogs";
 import Contact from "../assets/Components/Homes/Contact/Contact";
 import DoctorDetails from "../assets/Components/Homes/Doctors/DoctorDetails/DoctorDetails";
+import FindErrorPage from "../assets/Components/Homes/Doctors/FindErrorPage/FindErrorPage";
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'booking',
+                loader: () => fetch('/Doctor.json'),
                 Component: MyBooking
             },
             {
@@ -37,11 +39,11 @@ export const router = createBrowserRouter([
                 loader: async({params}) => {
                  const res = await  fetch('/Doctor.json');
                  const data = await res.json();
-                 console.log(data)
                  const singleData = data.find(item => item.id == params.id)
                  return singleData;
 
                 },
+                errorElement: <FindErrorPage></FindErrorPage>,
                 Component: DoctorDetails
             }
 

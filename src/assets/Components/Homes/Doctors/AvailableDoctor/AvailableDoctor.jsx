@@ -6,12 +6,16 @@ const AvailableDoctor = ({ doctorData }) => {
 
     const { experience, name, education, registration_number, image, id, speciality} = doctorData;
 
+
+
+    
+
     return (
         <div>
             
             <div className="card bg-white rounded-xl mt-4 md:mt-8 p-6">
                 <div className='flex justify-center  items-center p-6'>
-                    <img className=' bg-blue-300 rounded-xl pt-4 px-4 w-40 h-40   '
+                    <img className=' bg-blue-300 rounded-xl pt-4 px-4 w-40 h-40'
                         src={image}
                         alt="" />
                 </div>

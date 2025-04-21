@@ -10,7 +10,7 @@ const MedicalService = () => {
         <div className='mt-10 md:mt-20'>
             <div className='text-center space-y-3'>
                 <h2 className='text-3xl font-bold'>We Provide Best Medical Services</h2>
-                <p className='text-sm md:px-30'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. </p>
+                <p className='text-sm md:px-28'>Your health is our priority. We offer a wide range of advanced medical services designed to meet the needs of patients of all ages. From routine check-ups to specialized treatments, our team uses modern technology, expert knowledge, and a compassionate approach to ensure the best outcomes for you and your loved ones.</p>
             </div>
            
                 <div className='grid grid-cols-2 md:flex mt-6 md:justify-center gap-3 md:gap-5'>

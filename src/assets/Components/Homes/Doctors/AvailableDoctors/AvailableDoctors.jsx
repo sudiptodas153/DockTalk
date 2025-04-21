@@ -6,8 +6,8 @@ const AvailableDoctors = ({doctorsData}) => {
         <div className='mt-16'>
             <div className='text-center space-y-4'>
                 <h2 className='text-3xl font-bold'>Our Best Doctors</h2>
-                <p className='text-sm md:px-30'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
-                <h2>{doctorsData.length}</h2>
+                <p className='text-sm md:px-36'>At our clinic, we are proud to have a team of highly qualified and compassionate doctors who are committed to providing exceptional healthcare. Each of our specialists brings years of experience, advanced medical knowledge, and a patient-first approach to ensure the best possible care for every individual.</p>
+               
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 md:gap-4'>
                 {

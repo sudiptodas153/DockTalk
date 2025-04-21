@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import AvailableDoctors from '../Doctors/AvailableDoctors/AvailableDoctors';
 import { useLoaderData } from 'react-router';
 import MedicalService from '../MedicalService/MedicalService';
+import { ToastContainer } from 'react-toastify';
 
 const Home = () => {
     const doctorsData = useLoaderData()
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <AvailableDoctors doctorsData={doctorsData}></AvailableDoctors>
             <MedicalService></MedicalService>
+            
         </div>
     );
 };
