@@ -1,14 +1,14 @@
 import React from 'react';
 import image from '../../images/logo.png'
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 import { FaFacebook, FaGithub, FaInstagramSquare, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     const links = <>
-        <Link to={'/'}>Home</Link>
-        <Link to={'/booking'}>My-Bookings</Link>
-        <Link to={'/blogs'}>Blogs</Link>
-        <Link to={'/contact'}>Contact Us</Link>
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/booking'}>My-Bookings</NavLink>
+        <NavLink to={'/blogs'}>Blogs</NavLink>
+        <NavLink to={'/contact'}>Contact Us</NavLink>
 
     </>
 

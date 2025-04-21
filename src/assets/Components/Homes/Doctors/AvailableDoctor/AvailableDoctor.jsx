@@ -1,16 +1,18 @@
 import React from 'react';
 import { PiTrademarkRegisteredLight } from 'react-icons/pi';
+import { Link } from 'react-router';
 
 const AvailableDoctor = ({ doctorData }) => {
 
-    const { experience, name, education, registration_number } = doctorData;
+    const { experience, name, education, registration_number, image, id, speciality} = doctorData;
 
     return (
         <div>
-            <div className="card bg-white rounded-xl mt-4 md:mt-8">
-                <div className=''>
-                    <img className='p-6 '
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            
+            <div className="card bg-white rounded-xl mt-4 md:mt-8 p-6">
+                <div className='flex justify-center  items-center p-6'>
+                    <img className=' bg-blue-300 rounded-xl pt-4 px-4 w-40 h-40   '
+                        src={image}
                         alt="" />
                 </div>
                 <div className="px-6">
@@ -20,11 +22,13 @@ const AvailableDoctor = ({ doctorData }) => {
                     </div>
                     <div className='mt-3 space-y-1 pb-3 border-b-2 border-dashed border-gray-300'>
                         <h2 className="text-xl font-bold">{name}</h2>
-                        <p className='text-sm text-gray-600'>{education}</p>
+                        <p className='text-sm text-gray-600'>{education}-{speciality}</p>
                     </div>
                     <div className="mt-4 pb-5 space-y-3">
-                        <p className='flex items-center gap-2 text-xs text-gray-700'><PiTrademarkRegisteredLight size={17}/> Reg No: {registration_number}</p>
-                        <button className="btn bg-white border-1 w-full border-blue-400 text-blue-600 font-bold  rounded-4xl">View Details</button>
+                        <p className='flex items-center gap-2 text-xs text-gray-700'><PiTrademarkRegisteredLight size={17} /> Reg No: {registration_number}</p>
+                        <Link to={`/doctorDetails/${id}`}>
+                            <button className="btn bg-white border-1 w-full border-blue-400 text-blue-600 font-bold  rounded-4xl">View Details</button>
+                        </Link>
                     </div>
                 </div>
             </div>

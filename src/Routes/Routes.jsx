@@ -5,6 +5,7 @@ import Home from "../assets/Components/Homes/Home/Home";
 import MyBooking from "../assets/Components/Homes/MyBooking/MyBooking";
 import Blogs from "../assets/Components/Homes/Blogs/Blogs";
 import Contact from "../assets/Components/Homes/Contact/Contact";
+import DoctorDetails from "../assets/Components/Homes/Doctors/DoctorDetails/DoctorDetails";
 
 
 export const router = createBrowserRouter([
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 path: '/',
-                loader: () => fetch('Doctor.json'),
+                loader: () => fetch('/Doctor.json'),
                 Component: Home,
             },
             {
@@ -30,8 +31,20 @@ export const router = createBrowserRouter([
             {
                 path: 'contact',
                 Component: Contact
+            },
+            {
+                path: 'doctorDetails/:id',
+                loader: async({params}) => {
+                 const res = await  fetch('/Doctor.json');
+                 const data = await res.json();
+                 console.log(data)
+                 const singleData = data.find(item => item.id == params.id)
+                 return singleData;
+
+                },
+                Component: DoctorDetails
             }
-            
+
         ]
     },
 ]);
