@@ -9,7 +9,7 @@
       "registration_number": "BMDC123456",
       "designation": "Consultant, Internal Medicine",
       "workplace": "United Hospital, Dhaka",
-      "fee": "1200 BDT",
+      "fee": 1200,
       "availability": ["Sunday", "Tuesday", "Thursday"]
     },
     {
@@ -22,7 +22,7 @@
       "registration_number": "BMDC234567",
       "designation": "Associate Professor, Orthopedics",
       "workplace": "BSMMU, Dhaka",
-      "fee": "1000 BDT",
+      "fee": 1000,
       "availability": ["Monday", "Wednesday", "Friday"]
     },
     {
@@ -35,7 +35,7 @@
       "registration_number": "BMDC345678",
       "designation": "Senior Consultant, Gynecology",
       "workplace": "Popular Diagnostic Center, Dhanmondi",
-      "fee": "800 BDT",
+      "fee": 800,
       "availability": ["Saturday", "Monday", "Wednesday"]
     },
     {
@@ -48,7 +48,7 @@
       "registration_number": "BMDC456789",
       "designation": "Chief Cardiologist",
       "workplace": "National Heart Foundation, Dhaka",
-      "fee": "1500 BDT",
+      "fee": 1500,
       "availability": ["Sunday", "Tuesday", "Thursday"]
     },
     {
@@ -61,7 +61,7 @@
       "registration_number": "BMDC567890",
       "designation": "Consultant, Dermatology",
       "workplace": "Evercare Hospital, Dhaka",
-      "fee": "900 BDT",
+      "fee": 900,
       "availability": ["Sunday", "Tuesday", "Friday"]
     },
     {
@@ -74,7 +74,7 @@
       "registration_number": "BMDC678901",
       "designation": "Associate Professor, ENT",
       "workplace": "Dhaka Medical College",
-      "fee": "950 BDT",
+      "fee": 950,
       "availability": ["Monday", "Wednesday", "Saturday"]
     },
     {
@@ -87,7 +87,7 @@
       "registration_number": "BMDC789012",
       "designation": "Consultant, Pediatrics",
       "workplace": "Shishu Hospital, Dhaka",
-      "fee": "800 BDT",
+      "fee": 800,
       "availability": ["Sunday", "Tuesday", "Thursday"]
     },
     {
@@ -100,7 +100,7 @@
       "registration_number": "BMDC890123",
       "designation": "Consultant, Neurology",
       "workplace": "Square Hospitals Ltd.",
-      "fee": "1300 BDT",
+      "fee": 1300,
       "availability": ["Monday", "Wednesday", "Friday"]
     },
     {
@@ -113,7 +113,7 @@
       "registration_number": "BMDC901234",
       "designation": "Junior Consultant, Ophthalmology",
       "workplace": "Vision Eye Hospital, Dhaka",
-      "fee": "700 BDT",
+      "fee": 700,
       "availability": ["Saturday", "Monday", "Thursday"]
     },
     {
@@ -126,7 +126,7 @@
       "registration_number": "BMDC012345",
       "designation": "Consultant Psychiatrist",
       "workplace": "Mental Health Centre, Dhaka",
-      "fee": "1000 BDT",
+      "fee": 1000,
       "availability": ["Sunday", "Tuesday", "Thursday"]
     },
     {
@@ -139,7 +139,7 @@
       "registration_number": "BMDC112233",
       "designation": "Consultant Radiologist",
       "workplace": "Labaid Diagnostic, Gulshan",
-      "fee": "850 BDT",
+      "fee":                                       850,
       "availability": ["Monday", "Wednesday", "Friday"]
     },
     {
@@ -152,7 +152,7 @@
       "registration_number": "BMDC223344",
       "designation": "Senior Surgeon",
       "workplace": "Medinova Medical Services",
-      "fee": "1200 BDT",
+      "fee": 1200        ,
       "availability": ["Sunday", "Tuesday", "Friday"]
     }
   ]

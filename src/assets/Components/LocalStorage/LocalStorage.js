@@ -1,30 +1,37 @@
 import { toast } from "react-toastify";
 
-const getBookingDoctor = () =>{
+const getBookingDoctor = () => {
     const storeBooking = localStorage.getItem("bookingDoctor");
-    if(storeBooking){
+    if (storeBooking) {
         const bookingData = JSON.parse(storeBooking);
         return bookingData;
     }
-    else{
+    else {
         return [];
     }
 }
 
 
-const addBookingDoctor = (id) =>{
+const addBookingDoctor = (id) => {
     const storeDoctorInfo = getBookingDoctor();
-    if(storeDoctorInfo.includes(id)){
-       toast.error('Appointment already scheduled for today')
+    if (storeDoctorInfo.includes(id)) {
+        toast.error('Appointment already scheduled for today')
     }
-    else{
-        
+    else {
+
         storeDoctorInfo.push(id);
         const data = JSON.stringify(storeDoctorInfo);
-        
+
         localStorage.setItem("bookingDoctor", data)
     }
 }
 
 
-export {addBookingDoctor, getBookingDoctor};
+const removeBooking = (id) => {
+    const storeDoctorInfo = getBookingDoctor();
+    const updatedDoctorInfo = storeDoctorInfo.filter(docId => docId.id !== id);
+    localStorage.setItem("bookingDoctor", JSON.stringify(updatedDoctorInfo));
+};
+
+
+export { addBookingDoctor, getBookingDoctor, removeBooking };
