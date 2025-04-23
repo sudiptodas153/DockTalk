@@ -1,0 +1,24 @@
+ [
+      {
+        "question": "What is useState and how does it work in React?",
+        "answer": "useState is a Hook in React that lets you add state to functional components. When you call useState, it returns an array with two values: the current state value and a function to update that state. When the update function is called, React re-renders the component with the new state value."
+      },
+      {
+        "question": "What is the purpose of useEffect in React?",
+        "answer": "useEffect is a Hook used to handle side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM. It runs after the component renders. You can also specify dependencies to control when it should re-run."
+      },
+      {
+        "question": "What is a custom hook in React and when should you use one?",
+        "answer": "A custom hook is a JavaScript function that starts with 'use' and allows you to reuse logic using other hooks like useState, useEffect, etc. You should use custom hooks when you have logic that needs to be reused across multiple components, which helps keep your code clean and DRY (Don't Repeat Yourself)."
+      },
+      {
+        "question": "Difference between controlled and uncontrolled components? Which one is better?",
+        "answer": "Controlled components are form elements whose value is controlled by React via state. Uncontrolled components store their own state internally and use refs to access values. Controlled components are usually preferred because they provide more control and are easier to test and manage in larger applications."
+      },
+      {
+        "question": "Tell us something about useFormStatus() (explore and explain)",
+        "answer": "useFormStatus is a React hook provided in modern frameworks like Next.js with app router and React Server Components. It gives real-time feedback about the form submission status (e.g., pending, success, error). It helps show loading indicators or disable form inputs/buttons while the form is being submitted. It's particularly useful in server actions with async form handling."
+      }
+    ]
+  
+  

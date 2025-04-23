@@ -7,6 +7,8 @@ import Blogs from "../assets/Components/Homes/Blogs/Blogs";
 import Contact from "../assets/Components/Homes/Contact/Contact";
 import DoctorDetails from "../assets/Components/Homes/Doctors/DoctorDetails/DoctorDetails";
 import FindErrorPage from "../assets/Components/Homes/Doctors/FindErrorPage/FindErrorPage";
+import { Suspense } from "react";
+import Loading from "../assets/Components/Homes/Loading/Loading";
 
 
 export const router = createBrowserRouter([
@@ -19,28 +21,33 @@ export const router = createBrowserRouter([
                 index: true,
                 path: '/',
                 loader: () => fetch('/Doctor.json'),
-                Component: Home,
+               Component: Home
+
             },
             {
                 path: 'booking',
                 loader: () => fetch('/Doctor.json'),
                 Component: MyBooking
+                
+
             },
             {
                 path: 'blogs',
-                Component: Blogs
+                loader: ()=>fetch('/blogs.json'),
+               Component: Blogs
+
             },
             {
-                path: 'contact',
+                path: 'contact.',
                 Component: Contact
             },
             {
                 path: 'doctorDetails/:id',
-                loader: async({params}) => {
-                 const res = await  fetch('/Doctor.json');
-                 const data = await res.json();
-                 const singleData = data.find(item => item.id == params.id)
-                 return singleData;
+                loader: async ({ params }) => {
+                    const res = await fetch('/Doctor.json');
+                    const data = await res.json();
+                    const singleData = data.find(item => item.id == params.id)
+                    return singleData;
 
                 },
                 errorElement: <FindErrorPage></FindErrorPage>,

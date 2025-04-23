@@ -11,7 +11,7 @@ const Banner = () => {
             </div>
             <div className='text-center '>
                 <input type="text" className="input md:w-[420px] rounded-3xl mt-4" placeholder="Search any doctor..." />
-                <button className="btn rounded-3xl md:ml-3 mt-4 bg-[#176AE5] text-white">Search Now</button>
+                <button className="btn rounded-3xl md:ml-3 mt-4 font-bold bg-green-500 text-white">Search Now</button>
             </div>
             <div className='md:flex md:justify-center md:gap-10 '>
                 <img className='md:w-[500px] mt-4' src={bannerImage} alt="" />

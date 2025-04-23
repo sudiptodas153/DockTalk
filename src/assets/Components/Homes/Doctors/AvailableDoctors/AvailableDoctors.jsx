@@ -35,7 +35,7 @@ const AvailableDoctors = ({ doctorsData }) => {
                     <button onClick={() => {
                         setShowAll(!showAll)
                          if (showAll) window.scrollTo(0, 0)
-                    }} className='btn bg-blue-500 text-white rounded-xl'>{showAll ? 'Show Less' : 'Show All'}</button>
+                    }} className='btn bg-green-500 text-white rounded-xl'>{showAll ? 'Show Less' : 'Show All'}</button>
                 </div>
             </div>
         </div>

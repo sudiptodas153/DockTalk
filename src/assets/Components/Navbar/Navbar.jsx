@@ -1,40 +1,62 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import image from '../../images/logo.png'
 import './nav.css'
+import { IoMenuSharp } from 'react-icons/io5';
 
 const Navbar = () => {
-const links = <>
-<NavLink to={'/'}>Home</NavLink>
-<NavLink to={'/booking'}>My-Bookings</NavLink>
-<NavLink to={'/blogs'}>Blogs</NavLink>
-<NavLink to={'/contact'}>Contact Us</NavLink>
+    const links = <>
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/booking'}>My-Bookings</NavLink>
+        <NavLink to={'/blogs'}>Blogs</NavLink>
+        <NavLink to={'/contact'}>Contact Us</NavLink>
 
-</>
+    </>
+    const links2 = <>
+        <Link to={'/'}>Home</Link>
+        <Link to={'/booking'}>My-Bookings</Link>
+        <Link to={'/blogs'}>Blogs</Link>
+        <Link to={'/contact'}>Contact Us</Link>
+
+    </>
 
     return (
         <div className='container mx-auto md:px-10'>
             <div className="navbar">
                 <div className="navbar-start">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                        </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                           {links}
-                        </ul>
-                    </div>
+                   
                     <a className="flex items-center gap-1 md:gap-3 text-2xl md:text-3xl "><span><img className='w-9' src={image} alt="" /></span><span className='font-bold'>DocBD</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-10 menu-horizontal px-1">
-                       {links}
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn rounded-3xl bg-[#176AE5] text-white">Emergency</a>
+
+
+
+                    <div className="drawer z-50 md:hidden">
+                        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+                        <div className="drawer-content flex justify-end">
+                           
+                            <label htmlFor="my-drawer" className="drawer-button"><IoMenuSharp size={35}/></label>
+                        </div>
+                        
+                        <div className="drawer-side">
+                            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+                            <ul className="menu bg-base-200 space-y-4 text-base-content min-h-full w-80 p-4">
+                              {links2}
+                              <a className="btn mt-4 rounded-3xl bg-red-500 font-bold text-white">Emergency</a>
+                            </ul>
+                            
+                        </div>
+                       
+                        
+                    </div>
+
+
+                    <a className="btn hidden md:flex rounded-3xl bg-red-500 font-bold text-white">Emergency</a>
                 </div>
             </div>
         </div>
