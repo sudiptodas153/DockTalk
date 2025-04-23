@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="navbar">
                 <div className="navbar-start">
                    
-                    <a className="flex items-center gap-1 md:gap-3 text-2xl md:text-3xl "><span><img className='w-9' src={image} alt="" /></span><span className='font-bold'>DocBD</span></a>
+                    <a className="flex items-center gap-1 md:gap-3 text-2xl md:text-3xl "><span><img className='w-9' src={image} alt="" /></span><span className='font-bold'>MediCare</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu gap-10 menu-horizontal px-1">
