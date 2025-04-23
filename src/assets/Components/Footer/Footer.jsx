@@ -24,10 +24,10 @@ const Footer = () => {
             </div>
 
             <div className='flex items-center justify-center gap-5'>
-                <p><FaFacebook size={30} /></p>
-                <p><FaGithub size={30}/></p>
-                <p><FaInstagramSquare size={30}/></p>
-                <p><FaYoutube size={35}/></p>
+                <a href=''><FaFacebook size={30} /></a>
+                <a href=''><FaGithub size={30}/></a>
+                <a href=''><FaInstagramSquare size={30}/></a>
+                <a href=''><FaYoutube size={35}/></a>
             </div>
             
         </div>

@@ -28,22 +28,7 @@ const DoctorDetails = () => {
         else{
             toast.error('Appointment already scheduled for today')
         }
-        // if (!newId && !loading) {
-
-        //     setLoading(true);
-        //     addBookingDoctor(id);
-
-        //     setTimeout(() => {
-        //         setNewId(true);
-        //         setLoading(true);
-        //         navigate('/booking')
-
-        //     }, 1500);
-
-        // }
-       
-
-
+        
     }
 
 

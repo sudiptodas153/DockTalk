@@ -1,18 +1,18 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import { Outlet, useNavigation } from 'react-router';
+import { Outlet } from 'react-router';
 import Footer from '../Footer/Footer';
 import { ToastContainer } from 'react-toastify';
 
 const Root = () => {
-    const navigation = useNavigation();
-    
+    // const navigation = useNavigation();
+
 
     return (
         <div>
             <Navbar></Navbar>
-            { navigation.state == "loading" ? <LoadingIndicator /> : <Outlet /> }
-           
+            <Outlet></Outlet>
+
             <Footer></Footer>
 
         </div>
