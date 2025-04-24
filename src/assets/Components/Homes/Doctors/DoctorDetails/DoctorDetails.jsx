@@ -15,26 +15,33 @@ const DoctorDetails = () => {
     const [loading, setLoading] = useState(false);
 
 
+
     const BookNow = (id) => {
-        const storeDoctorInfo = getBookingDoctor();
-        if (!storeDoctorInfo.includes(id)) {
-            setLoading(true)
-            addBookingDoctor(id);
-            toast.success(`Appointment scheduled for ${name} successfully`);
-            setTimeout(() => {
-                navigate('/booking')
-            }, 1000)
+        if (availability[0] === dayName || availability[1] === dayName || availability[2] === dayName) {
+            const storeDoctorInfo = getBookingDoctor();
+            if (!storeDoctorInfo.includes(id)) {
+                setLoading(true)
+                addBookingDoctor(id);
+                toast.success(`Appointment scheduled for ${name} successfully`);
+                setTimeout(() => {
+                    navigate('/booking')
+                }, 1000)
+            }
+            else {
+                toast.error('Appointment already scheduled for today')
+            }
         }
-        else {
-            toast.error('Appointment already scheduled for today')
+        else{
+            toast.error(`${name} Unavailable today`)
         }
+
 
     }
 
 
     const today = new Date();
     const dayName = today.toLocaleDateString("en-US", { weekday: "long" });
-  
+
 
 
 
@@ -106,13 +113,13 @@ const DoctorDetails = () => {
                 <div className='flex items-center justify-between pb-4 mt-4 border-b-2 border-gray-200'>
                     <p className='text-sm font-bold'>Availability</p>
                     {
-                         availability[0] === dayName || availability[1] === dayName || availability[2] === dayName ?
-                         <p className='text-xs text-green-500 bg-green-100 border-1 border-gray-100 py-1 px-3 rounded-2xl'>Doctor Available Today</p>
-                         : 
-                         <p className='text-xs text-red-500 bg-red-100 border-1 border-gray-100 py-1 px-3 rounded-2xl'>Doctor Unavailable Today</p>
+                        availability[0] === dayName || availability[1] === dayName || availability[2] === dayName ?
+                            <p className='text-xs text-green-500 bg-green-100 border-1 border-gray-100 py-1 px-3 rounded-2xl'>Doctor Available Today</p>
+                            :
+                            <p className='text-xs text-red-500 bg-red-100 border-1 border-gray-100 py-1 px-3 rounded-2xl'>Doctor Unavailable Today</p>
 
                     }
-                   
+
                 </div>
 
 

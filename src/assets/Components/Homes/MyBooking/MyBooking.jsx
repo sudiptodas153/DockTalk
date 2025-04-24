@@ -58,8 +58,8 @@ const MyBooking = () => {
                     :
                     <div className='container mx-auto'>
                         <div className='text-center mt-10'>
-                            <div className='flex justify-center items-center my-6'>
-                                <div className='w-full h-[400px] px-2 bg-white'>
+                            <div className='flex justify-center items-center my-6 p-6'>
+                                <div className='w-full h-[400px] px-2 md:p-5 bg-white'>
                                     <ResponsiveContainer width="100%" height="100%">
                                         <BarChart width={800} height={400}
                                             data={bookList}>

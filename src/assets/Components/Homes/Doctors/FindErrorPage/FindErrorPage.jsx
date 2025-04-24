@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
 const FindErrorPage = () => {
+    const errorId = useLoaderData()
+    console.log(errorId)
     return (
         <div className='bg-white text-center mt-10 px-3 space-y-3 py-10 mx-3 rounded-2xl'>
            <h2 className='text-3xl font-bold'>No Doctor Found!!</h2>

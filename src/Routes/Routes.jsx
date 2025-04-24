@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
                     const data = await res.json();
                     const singleData = data.find(item => item.id == params.id)
                     return singleData;
-
+                    
                 },
                 errorElement: <FindErrorPage></FindErrorPage>,
                 Component: DoctorDetails

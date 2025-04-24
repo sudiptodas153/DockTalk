@@ -35,7 +35,7 @@ const AvailableDoctor = ({ doctorData }) => {
                     <div className="mt-4 pb-5 space-y-3">
                         <p className='flex items-center gap-2 text-xs text-gray-700'><PiTrademarkRegisteredLight size={17} /> Reg No: {registration_number}</p>
                         <Link to={`/doctorDetails/${id}`}>
-                            <button className="btn bg-white border-1 w-full border-green-400 text-green-600 font-bold  rounded-4xl">View Details</button>
+                            <button className="btn bg-white border-1 w-full border-green-400 text-green-600 font-bold hover:bg-green-500 hover:text-white rounded-4xl">View Details</button>
                         </Link>
                     </div>
                 </div>
