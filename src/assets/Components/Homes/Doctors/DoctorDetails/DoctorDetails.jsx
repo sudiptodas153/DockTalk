@@ -17,28 +17,26 @@ const DoctorDetails = () => {
 
 
     const BookNow = (id) => {
+        
+        if (availability[0] === dayName || availability[1] === dayName || availability[2] === dayName) {
+            const storeDoctorInfo = getBookingDoctor();
+            if (!storeDoctorInfo.includes(id)) {
+                setLoading(true)
+                addBookingDoctor(id);
+                toast.success(`Appointment scheduled for ${name} successfully`);
+                setTimeout(() => {
+                    navigate('/booking')
+                }, 1000)
+            }
+            else {
+                toast.error('Appointment already scheduled for today')
+            }
 
 
-        const storeDoctorInfo = getBookingDoctor();
-        if (!storeDoctorInfo.includes(id)) {
-            setLoading(true)
-            addBookingDoctor(id);
-            toast.success(`Appointment scheduled for ${name} successfully`);
-            setTimeout(() => {
-                navigate('/booking')
-            }, 1000)
         }
         else {
-            toast.error('Appointment already scheduled for today')
+            toast.error(`${name} Unavailable today`)
         }
-
-
-        // if (availability[0] === dayName || availability[1] === dayName || availability[2] === dayName) {
-
-        // }
-        // else {
-        //     toast.error(`${name} Unavailable today`)
-        // }
 
 
     }
