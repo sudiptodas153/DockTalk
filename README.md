@@ -11,13 +11,6 @@ The site features a responsive design and a user-friendly interface.
 
 ---
 
-## Screenshot
-
-![Medi Care Help Screenshot](https://raw.githubusercontent.com/yourusername/yourrepo/main/path-to-screenshot.png)
-
-*Replace the above URL with the actual screenshot image URL from your repository or image host.*
-
----
 
 ## Technology Stack
 
