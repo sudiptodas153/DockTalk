@@ -49,7 +49,7 @@ The site features a responsive design and a user-friendly interface.
    ```bash
    git clone https://github.com/sudiptodas153/DockTalk.git
 
-   2. Navigate to the project folder:
+2. Navigate to the project folder:
    ```bash
    cd docTalk-A-8
    
